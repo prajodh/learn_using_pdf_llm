@@ -5,9 +5,14 @@ name = "pypi"
 
 [packages]
 langchain = "*"
-langchainhub = "*"
 python-dotenv = "*"
 streamlit = "*"
+langchain-google-genai = "*"
+langchain-community = "*"
+faiss-cpu = "*"
+langchainhub = "*"
+pypdf = "*"
+langsmith = "*"
 
 [dev-packages]
 
