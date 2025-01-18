@@ -4,6 +4,12 @@ import uuid
 from ingestion import ingest_data_and_create_vector_store, clean_resources
 from model import run_model_and_RAG
 
+directory_name = "pdf_files"
+if not os.path.exists(directory_name):
+    os.makedirs(directory_name)
+    print(f"Directory '{directory_name}' created.")
+else:
+    print(f"Directory '{directory_name}' already exists.")
 # Initialize session state variables
 if "uploaded_file_name" not in st.session_state:
     st.session_state.uploaded_file_name = None
